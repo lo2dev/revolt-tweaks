@@ -13,6 +13,13 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
    scrollbar-width: initial;
 }
 ```
+## Remove modal animations
+```css
+[class^="Container-sc-"], [class^="Base-sc-"], [class^="_settings_"] {
+	animation: none !important;
+	transition: 0 !important;
+}
+```
 
 ## Permanent spoiler 
 Hide all images and videos by displaying a css spoiler. Hover over it to see it.
