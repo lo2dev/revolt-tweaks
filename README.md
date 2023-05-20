@@ -16,7 +16,7 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```css
 [class^="Container-sc-"], [class^="Base-sc-"], [class^="_settings_"] {
 	animation: none !important;
-	transition: 0 !important;
+	transition: none !important;
 }
 ```
 
