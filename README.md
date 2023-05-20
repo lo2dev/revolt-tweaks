@@ -60,6 +60,7 @@ On mobile, long press to preview the image, press to view it.
 ```
 
 ### Permanent spoiler (Blur)
+This is applied only on images.
 
 ```css
 [class^="Grid-sc-"] > img[class^="_image_"] {
