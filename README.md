@@ -5,6 +5,8 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 
 ## TODO
 - Larger profile modal;
+- Discrod style messagebar;
+- Square profile pictures;
 - Disable animations/transitions;
 
 ## Wider scrollbar (Firefox)
@@ -18,6 +20,13 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 [class^="Container-sc-"], [class^="Base-sc-"], [class^="_settings_"] {
 	animation: none !important;
 	transition: 0 !important;
+}
+```
+
+## Square user icons
+```css
+:root {
+    --border-radius-user-icon: 3px;
 }
 ```
 
