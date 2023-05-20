@@ -27,6 +27,25 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
+## Discord style messagebar
+```css
+[class^="MessageBox__Base-sc-"] {
+	margin: 0 1rem 1.4rem 1rem;
+	border-radius: 11px;
+}
+[class^="FilePreview__Container-sc-"],
+[class^="TypingIndicator__Base-sc-"], 
+[class^="AutoComplete__Base-sc-"], 
+[class^="JumpToBottom__Bar-sc-"] {
+	margin: 0 1rem;
+	border-radius: 11px;
+}
+
+[class^="AutoComplete__Base-sc-"] > div{
+	border-radius: 11px;
+}
+```
+
 ## Permanent spoiler 
 Hide all images and videos by displaying a css spoiler. Hover over it to see it.
 On mobile, long press to preview the image, press to view it.
