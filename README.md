@@ -5,9 +5,6 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 
 ## TODO
 - Larger profile modal;
-- Discrod style messagebar;
-- Square profile pictures;
-- Disable animations/transitions;
 
 ## Wider scrollbar (Firefox)
 ```css
