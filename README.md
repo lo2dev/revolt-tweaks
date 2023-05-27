@@ -14,6 +14,8 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```
 
 ## Hide homescreen actions
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/d4af37b7-0e52-4aeb-b494-fda2920b1d74)
+
 ```css
 [class^="_home_"] [class^="_homeScreen_"] [class^="_actions_"] {
   display: none;
@@ -29,6 +31,8 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```
 
 ## Square user avatars
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/97319ee8-7f9c-4d64-8fec-a159438511a7)
+
 ```css
 :root {
     --border-radius-user-icon: 3px;
@@ -36,6 +40,8 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```
 
 ## Alternative active server indicator
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
+
 ```css
 [class^="SwooshWrapper-sc-"] > svg > path:not(:first-child), 
 [class^="SwooshWrapper-sc-"] > svg > rect {
@@ -51,6 +57,8 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```
 
 ## Discord style messagebar
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/ef35b964-b943-4be9-b491-ff399a02ab0d)
+
 ```css
 [class^="MessageBox__Base-sc-"] {
 	margin: 0 1rem 1.4rem 1rem;
@@ -74,6 +82,8 @@ Hide all images and videos by displaying a css spoiler. Hover over it to see it.
 On mobile, long press to preview the image, press to view it.
 
 **Known issues:** If you start a video and then stop hovering, the spoiler is going to show regardless and the video keeps playing. 
+
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/6fc47ed8-af2d-4201-8177-5d7e07829183)
 
 ```css
 [class^="Grid-sc-"] {
@@ -103,6 +113,8 @@ On mobile, long press to preview the image, press to view it.
 
 ### Permanent spoiler (Blur)
 This is applied only on images.
+
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/142832e7-efc8-40c9-a3bc-bc8567c10b17)
 
 ```css
 [class^="Grid-sc-"] > img[class^="_image_"] {
