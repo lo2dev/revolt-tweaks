@@ -35,6 +35,21 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
+## Alternative active server indicator
+```css
+[class^="SwooshWrapper-sc-"] > svg > path:not(:first-child), 
+[class^="SwooshWrapper-sc-"] > svg > rect {
+    display: none;
+}
+
+[class^="SwooshWrapper-sc-"] > svg > path:first-child {
+    fill: red;
+    /* Fix uneven bubble around the server icon */
+    transform: translateX(.8px) scale(.9);
+    transform-origin: center;
+}
+```
+
 ## Discord style messagebar
 ```css
 [class^="MessageBox__Base-sc-"] {
