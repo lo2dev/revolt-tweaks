@@ -12,6 +12,14 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
    scrollbar-width: initial;
 }
 ```
+
+## Hide homescreen actions
+```css
+[class^="_home_"] [class^="_homeScreen_"] [class^="_actions_"] {
+  display: none;
+}
+```
+
 ## Remove modal animations
 ```css
 [class^="Container-sc-"], [class^="Base-sc-"], [class^="_settings_"] {
@@ -20,7 +28,7 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
-## Square user icons
+## Square user avatars
 ```css
 :root {
     --border-radius-user-icon: 3px;
