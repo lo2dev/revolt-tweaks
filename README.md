@@ -56,6 +56,13 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
+## Hide channel icons
+```css
+div[class^="_item_"] > div[class^="_avatar_"] {
+  display: none;
+}
+```
+
 ## Discord style messagebar
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/ef35b964-b943-4be9-b491-ff399a02ab0d)
 
