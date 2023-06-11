@@ -49,7 +49,7 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 
 [class^="SwooshWrapper-sc-"] > svg > path:first-child {
-    fill: red;
+    fill: var(--accent);
     /* Fix uneven bubble around the server icon */
     transform: translateX(.8px) scale(.9);
     transform-origin: center;
