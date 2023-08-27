@@ -3,9 +3,6 @@ This is a repo containing useful CSS snippets for revolt.chat.
 
 All you have to do to apply them is to **paste them in Settings -> Appearance -> Custom CSS.**
 
-## TODO
-- Larger profile modal;
-
 ## Wider scrollbar (Firefox)
 ```css
 * {
