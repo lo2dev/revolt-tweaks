@@ -36,6 +36,13 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
+## Bigger chat emoji
+```css
+:root {
+  --emoji-size: 4em;
+}
+```
+
 ## Alternative active server indicator
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
 
