@@ -36,7 +36,9 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 ```
 
-## Bigger chat emoji
+## Bigger chat emoji (Broken)
+This variable is apparently declared on a nameless div inside the message parent so it's broken.
+Why not fix it? Because changing this just the breaks message layout.
 ```css
 :root {
   --emoji-size: 4em;
