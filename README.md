@@ -235,7 +235,7 @@ This is applied only on images.
 ```
 
 ## Alternative user popup (Flawed)
-**Note:** This effects every popup that opens in a popup, including images, warnings, errors, etc.
+**Note:** This effects every popup, including images, warnings, errors, etc.
 ![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/b1945041-d7fb-4ec7-837b-f9df12813dda)
 
 ```css
