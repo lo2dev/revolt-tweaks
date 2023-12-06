@@ -144,7 +144,7 @@ margin: 0 1rem;
 
 ## Message bubbles
 Displays messages in a bubble.
-![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/6b85d764-5555-47b8-96a7-3aac90e6013f)
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/16deeba2-83a1-4267-972e-41d4d38a4254)
 
 ```css
 [class^="MessageBase__MessageContent-sc-"] {
