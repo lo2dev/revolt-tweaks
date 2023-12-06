@@ -219,6 +219,20 @@ This is applied only on images.
 }
 ```
 
+## Alternative user popup
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/b1945041-d7fb-4ec7-837b-f9df12813dda)
+
+```css
+[class^="Base-sc-1d"] {
+	background: rgba(0, 0, 0, 0.4);
+}
+    
+[class^="Container-sc-1d"] {
+	position: fixed;
+	bottom: -1.5rem;
+}
+```
+
 # License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
