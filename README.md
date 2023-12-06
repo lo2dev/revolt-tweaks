@@ -32,7 +32,17 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 
 ```css
 :root {
-    --border-radius-user-icon: 3px;
+	--border-radius-user-icon: 3px;
+}
+```
+
+## Square server icons (and more)
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/7acd9aff-5d0e-43df-9325-487b53c0e6af)
+
+```css
+[class^="Image-sc-"],
+[class^="IconBase__ImageIconBase-sc-"] {
+	border-radius: 3px;
 }
 ```
 
