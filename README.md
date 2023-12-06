@@ -59,17 +59,55 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 }
 
 [class^="SwooshWrapper-sc-"] > svg > path:first-child {
-    fill: var(--accent);
-    /* Fix uneven bubble around the server icon */
-    transform: translateX(.8px) scale(.9);
-    transform-origin: center;
+	fill: var(--accent);
+	/* Fix uneven bubble around the server icon */
+	transform: translateX(.8px) scale(.9);
+	transform-origin: center;
 }
 ```
 
 ## Hide channel icons
 ```css
 div[class^="_item_"] > div[class^="_avatar_"] {
-  display: none;
+	display: none;
+}
+```
+
+## Consistent server header side
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/f0b78985-355a-4ad9-a662-bcdf26421a60)
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/0d7b7525-c8d5-4b88-90ba-7835e720e684)
+
+```css
+[class^="ServerHeader__ServerBanner-sc-"] {
+	height: 48px;
+}
+```
+
+## Auto-hiding channels list
+Automatically hides the channels sidebar until hovered over.
+```css
+[class^="ServerSidebar__ServerBase-sc-"]:hover {
+	width: 232px;
+	transition: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+[class^="ServerSidebar__ServerBase"] {
+	width: 50px;
+	transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+```
+
+## Auto-hiding members list
+Automatically hides the members sidebar until hovered over.
+```css
+[class^="SidebarBase-sc-"]:nth-child(2):hover {
+	width: 232px;
+	transition: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+[class^="SidebarBase-sc-"]:nth-child(2) {
+	width: 54px;
+	transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 ```
 
@@ -85,12 +123,32 @@ div[class^="_item_"] > div[class^="_avatar_"] {
 [class^="TypingIndicator__Base-sc-"], 
 [class^="AutoComplete__Base-sc-"], 
 [class^="JumpToBottom__Bar-sc-"] {
-	margin: 0 1rem;
+margin: 0 1rem;
 	border-radius: 11px;
 }
 
 [class^="AutoComplete__Base-sc-"] > div{
 	border-radius: 11px;
+}
+```
+
+## Message bubbles
+Displays messages in a bubble.
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/6b85d764-5555-47b8-96a7-3aac90e6013f)
+
+```css
+[class^="MessageBase__MessageContent-sc-"] {
+	background-color: var(--tertiary-background);
+	border-radius: 18px;
+	padding: 10px 13px 10px 13px;
+	flex-grow: 0;
+}
+```
+
+## Hide blocked messages
+```css
+[class^="MessageRenderer__BlockedMessage-sc-"] {
+	display: none;
 }
 ```
 
@@ -104,11 +162,11 @@ On mobile, long press to preview the image, press to view it.
 
 ```css
 [class^="Grid-sc-"] {
-  position: relative !important;
+	position: relative !important;
 }
 
 [class^="Grid-sc-"]::before {
-  content: "Hidden";
+	content: "Hidden";
   display: flex;
   align-items: center;
   justify-content: center;
