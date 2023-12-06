@@ -49,15 +49,30 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ## Wide emoji
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/f8820fae-5599-4ada-a72d-973c225db9e8)
 
-**Note**: has weird behavior in emoji picker.
+**Note:** has weird behavior in emoji picker.
 
-**Credit**: amycatgirl
+**Credit:** amycatgirl
 ```css
 .emoji {
   width: unset !important;
 }
 ```
 
+## Blurred server sidebar
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/f4c3ab99-3694-4ffd-bf0a-aa63824a37ed)
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/835da04f-6437-411e-81c3-b47b92258e30)
+
+```css
+[class^="Base-sc-"] {
+	filter: blur(7px);
+	transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+[class^="Base-sc-"]:hover {
+	filter: blur(0px);
+	transition: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+```
 
 ## Alternative active server indicator
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
@@ -73,13 +88,6 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 	/* Fix uneven bubble around the server icon */
 	transform: translateX(.8px) scale(.9);
 	transform-origin: center;
-}
-```
-
-## Hide channel icons
-```css
-div[class^="_item_"] > div[class^="_avatar_"] {
-	display: none;
 }
 ```
 
@@ -118,6 +126,13 @@ Automatically hides the members sidebar until hovered over.
 [class^="SidebarBase-sc-"]:nth-child(2) {
 	width: 54px;
 	transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+```
+
+## Hide channel icons
+```css
+div[class^="_item_"] > div[class^="_avatar_"] {
+	display: none;
 }
 ```
 
@@ -219,7 +234,8 @@ This is applied only on images.
 }
 ```
 
-## Alternative user popup
+## Alternative user popup (Flawed)
+**Note:** This effects every popup that opens in a popup, including images, warnings, errors, etc.
 ![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/b1945041-d7fb-4ec7-837b-f9df12813dda)
 
 ```css
