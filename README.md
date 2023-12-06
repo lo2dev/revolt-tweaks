@@ -34,6 +34,20 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 :root {
     --border-radius-user-icon: 3px;
 }
+```
+
+## Wide emoji
+![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/f8820fae-5599-4ada-a72d-973c225db9e8)
+
+**Note**: has weird behavior in emoji picker.
+
+**Credit**: amycatgirl
+```css
+.emoji {
+  width: unset !important;
+}
+```
+
 
 ## Alternative active server indicator
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
