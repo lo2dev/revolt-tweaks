@@ -34,16 +34,6 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 :root {
     --border-radius-user-icon: 3px;
 }
-```
-
-## Bigger chat emoji (Broken)
-This variable is apparently declared on a nameless div inside the message parent so it's broken.
-Why not fix it? Because changing this just the breaks message layout.
-```css
-:root {
-  --emoji-size: 4em;
-}
-```
 
 ## Alternative active server indicator
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
