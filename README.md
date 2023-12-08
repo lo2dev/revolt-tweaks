@@ -28,12 +28,16 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ```
 
 ## Square user avatars
-![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/97319ee8-7f9c-4d64-8fec-a159438511a7)
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/26941050/65e74c33-5fcc-486a-b965-44ecdfb615c4)
 
 ```css
 :root {
 	--border-radius-user-icon: 3px;
 }
+[class^="TypingIndicator__Base-sc-"] > div > [class^="avatars"] > img {
+	border-radius: 3px;
+}
+
 ```
 
 ## Square server icons (and more)
