@@ -59,13 +59,12 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 ## Wide emoji
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/f8820fae-5599-4ada-a72d-973c225db9e8)
 
-**Note:** has weird behavior in emoji picker.
-
 **Credit:** amycatgirl
 ```css
 /* -- Wide emoji -- */
 .emoji {
   width: unset !important;
+  max-width: 100%;
 }
 ```
 
