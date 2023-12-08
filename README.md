@@ -31,9 +31,16 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/97319ee8-7f9c-4d64-8fec-a159438511a7)
 
 ```css
+/* main chat & user sidebar */
 :root {
 	--border-radius-user-icon: 3px;
 }
+
+/* typing indicator */
+[class^="TypingIndicator__Base-sc-"] > div > [class^="avatars"] > img {
+	border-radius: 3px;
+}
+
 ```
 
 ## Square server icons (and more)
