@@ -248,13 +248,6 @@ This is applied only on images.
   filter: blur(0px);
 }
 ```
-## Hide Revolt Lounge #Lounge 🦝 (Outdated)
-**Note**: this will hide every channel with the name "Lounge 🦝" in all servers.
-```css
-[class^="ServerSidebar__ServerList-sc-"] [aria-label^="Lounge 🦝"] {
-  display: none;
-}
-```
 
 ## Alternative user popup (Flawed)
 **Note:** This effects every popup, including images, warnings, errors, etc.
