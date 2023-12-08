@@ -63,12 +63,12 @@ All you have to do to apply them is to **paste them in Settings -> Appearance ->
 ![image](https://github.com/lo-kiss/revolt-tweaks/assets/60184397/835da04f-6437-411e-81c3-b47b92258e30)
 
 ```css
-[class^="Base-sc-"] {
+[class^="SidebarBase-sc-"] > [class^="Base-sc-"] {
 	filter: blur(7px);
 	transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-[class^="Base-sc-"]:hover {
+[class^="SidebarBase-sc-"] > [class^="Base-sc-"]:hover {
 	filter: blur(0px);
 	transition: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
 }
