@@ -11,6 +11,22 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 }
 ```
 
+## Wider scrollbar (Desktop/Chrome/Edge/etc)
+```css
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary-background); /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+```
+
 ## Hide homescreen actions
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/d4af37b7-0e52-4aeb-b494-fda2920b1d74)
 
