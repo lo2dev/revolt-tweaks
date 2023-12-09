@@ -87,7 +87,8 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 
 ## Alternative active server indicator
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/881afbf7-f275-4ca1-88c5-10e3b8ce7d85)
-
+> [!NOTE]  
+> Incompatible with Square server icons
 ```css
 /* -- Alternative active server indicator -- */
 [class^="SwooshWrapper-sc-"] > svg > path:not(:first-child), 
@@ -200,7 +201,8 @@ Displays messages in a bubble.
 Hide all images and videos by displaying a css spoiler. Hover over it to see it.
 On mobile, long press to preview the image, press to view it.
 
-**Known issues:** If you start a video and then stop hovering, the spoiler is going to show regardless and the video keeps playing. 
+> [!NOTE]
+If you start a video and then stop hovering, the spoiler is going to show regardless and the video keeps playing. 
 
 ![image](https://github.com/lo-kiss/revolt-css-snippets/assets/115636509/6fc47ed8-af2d-4201-8177-5d7e07829183)
 
