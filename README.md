@@ -91,7 +91,8 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 /* -- Rounded message highlight -- */
 [class^="MessageBase"] {
   border-radius: 8px;
-  margin: 0 .3rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
 }
 ```
 
