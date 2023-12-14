@@ -13,6 +13,7 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 
 ## Wider scrollbar (Desktop/Chrome/Edge/etc)
 ```css
+/* -- Wider scrollbar (Desktop/Chrome/Edge/etc) -- */
 *::-webkit-scrollbar {
   width: 15px;
 }
@@ -81,6 +82,16 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 .emoji {
   width: unset !important;
   max-width: 100%;
+}
+```
+
+## Rounded message highlight
+![image](https://github.com/lo-kiss/revolt-tweaks/assets/115636509/ee7aa5b5-f4c4-4c86-bb13-6cf6b365c810)
+```css
+/* -- Rounded message highlight -- */
+[class^="MessageBase"] {
+  border-radius: 8px;
+  margin: 0 .3rem;
 }
 ```
 
