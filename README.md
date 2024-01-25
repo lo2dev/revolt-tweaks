@@ -302,6 +302,116 @@ a[href^="/server/"] svg > circle {
 }
 ```
 
+## Material design 3 styled components (incomplete)
+```css
+/** Message box tweaks */
+[class^="MessageBox__Base"] {
+  padding: 3px;
+  margin: 5px 10px 10px 10px;
+
+  border-radius: 15px;
+}
+
+/** Material 3 styled autocomplete and replies */
+
+[class^="AutoComplete__Base"] div {
+  background: transparent;
+  padding: 3px;
+}
+
+[class^="AutoComplete__Base"] button {
+  background-color: var(--secondary-background);
+  padding: 10px;
+  transition: border-radius .1s cubic-bezier(.62,.07,.48,.97);
+}
+
+[class^="AutoComplete__Base"] button.active {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+[class^="AutoComplete__Base"] :not(button:first-of-type, button:last-of-type), [class^="AutoComplete__Base"] button:only-of-type {
+  border-radius: 10px !important;
+}
+
+[class^="ReplyBar__Base"] {
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+[class^="AutoComplete__Base"] button:first-of-type {
+  border-radius: 20px 20px 10px 10px;
+}
+
+[class^="ReplyBar__Base"]:first-of-type {
+  border-radius: 15px 15px 5px 5px;
+}
+
+[class^="AutoComplete__Base"] button:last-of-type {
+  border-radius: 10px 10px 20px 20px;
+}
+
+[class^="ReplyBar__Base"]:last-of-type {
+  border-radius: 5px 5px 15px 15px;
+}
+
+/** Attachment carousel */
+
+[class^="FilePreview__Container"] {
+ margin: 5px 10px;
+
+ border-radius: 10px;
+}
+
+span.fn { display: none; }
+span.size { text-align: start !important; margin-left: 3px; }
+
+/** Reactions (Might change classes after next commit) */
+.sc-jSgvzq {
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid var(--primary-header);
+}
+
+/** active */
+.fDfxAc {
+  background-color: var(--accent) !important;
+  color: var(--background) !important;
+  border: none !important;
+  font-weight: 600;
+}
+
+/** Messages (QOL) */
+
+.sc-jJEKmz {
+  margin-bottom: 3px;
+}
+
+/** Context Menu */
+
+#Menu {
+  padding: unset;
+  border-radius: 5px;
+  backdrop-filter: unset;
+  background-color: var(--message-box);
+}
+
+#Menu [class^="LineDivider"] {
+  background-color: var(--tertiary-background);
+  width: 100%;
+}
+
+#Menu span {
+  border-radius: unset;
+  margin: 0;
+  padding: 5px;
+}
+
+#Menu > span:hover {
+  background-color: rgba(var(--accent-rgb),max(var(--min-opacity),.20))
+}
+```
+
 # License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
