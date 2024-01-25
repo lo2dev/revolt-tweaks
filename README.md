@@ -412,6 +412,11 @@ span.size { text-align: start !important; margin-left: 3px; }
 }
 ```
 
+![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/4e6a4244-72f1-4286-be40-4c9fc14c9f8b)
+![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/f8b147cd-9af4-4f48-a73e-f2ae80a1e439)
+![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/cc10d609-5367-40f5-9a2c-b636542653ab)
+
+
 # License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
