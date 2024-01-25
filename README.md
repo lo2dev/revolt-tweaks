@@ -414,7 +414,8 @@ span.size { text-align: start !important; margin-left: 3px; }
 
 ![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/4e6a4244-72f1-4286-be40-4c9fc14c9f8b)
 ![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/f8b147cd-9af4-4f48-a73e-f2ae80a1e439)
-![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/cc10d609-5367-40f5-9a2c-b636542653ab)
+![Screenshot_20240125_162646](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/bebb5d32-cf25-4279-b8fa-30a1208f1351)
+
 
 
 # License
