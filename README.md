@@ -411,25 +411,36 @@ pre[class^="sc"] div[class^="sc"] {
 
 /** Context Menu */
 
-#Menu {
+#Menu, #NotificationOptions {
   padding: unset;
   border-radius: 5px;
   backdrop-filter: unset;
   background-color: var(--message-box);
 }
 
-#Menu [class^="LineDivider"] {
+#NotificationOptions .cnaZqa {
+ background-color: var(--message-box);
+}
+
+#Menu [class^="LineDivider"],
+#NotificationOptions [class^="LineDivider"] {
   background-color: var(--tertiary-background);
   width: 100%;
 }
 
-#Menu span {
+#Menu span,
+#NotificationOptions span {
   border-radius: unset;
   margin: 0;
   padding: 5px;
 }
 
-#Menu > span:hover {
+#NotificationOptions span {
+  padding: 10px;
+}
+
+#Menu > span:hover,
+#NotificationOptions span:hover {
   background-color: rgba(var(--accent-rgb),max(var(--min-opacity),.20))
 }
 
@@ -485,6 +496,19 @@ div[type="user_profile"] [class^="_header_"] {
 
 div[type="user_profile"] [class^="_content_"] {
   border-radius: 0 0 15px 15px;
+}
+
+[class^="_entries_"] > [class^="_entry_"],
+[class^="_entries_"] > [class^="_entry_"]:only-of-type {
+  border-radius: 10px;
+}
+
+[class^="_entries_"] > [class^="_entry_"]:first-of-type {
+  border-radius: 20px 20px 10px 10px;
+}
+
+[class^="_entries_"] > [class^="_entry_"]:last-of-type {
+  border-radius:  10px 10px 20px 20px;
 }
 
 /** Server List **/
