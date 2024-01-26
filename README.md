@@ -304,15 +304,12 @@ a[href^="/server/"] svg > circle {
 
 ## Material design 3 styled components (incomplete)
 ```css
-/** Message box tweaks */
 [class^="MessageBox__Base"] {
   padding: 3px;
   margin: 5px 10px 10px 10px;
 
   border-radius: 15px;
 }
-
-/** Material 3 styled autocomplete and replies */
 
 [class^="AutoComplete__Base"] div {
   background: transparent;
@@ -334,7 +331,7 @@ a[href^="/server/"] svg > circle {
   border-radius: 10px !important;
 }
 
-[class^="ReplyBar__Base"] {
+[class^="ReplyBar__Base"], [class^="ReplyBar__Base"]:only-of-type {
   border-radius: 5px;
   margin: 5px 10px;
 }
@@ -353,6 +350,11 @@ a[href^="/server/"] svg > circle {
 
 [class^="ReplyBar__Base"]:last-of-type {
   border-radius: 5px 5px 15px 15px;
+}
+
+[class^="ReplyBar__Base"], [class^="ReplyBar__Base"]:only-of-type {
+  border-radius: 5px;
+  margin: 5px 10px;
 }
 
 /** Attachment carousel */
@@ -387,6 +389,26 @@ span.size { text-align: start !important; margin-left: 3px; }
   margin-bottom: 3px;
 }
 
+pre[class^="sc"] {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--tertiary-background);
+}
+
+pre[class^="sc"] div[class^="sc"] a {
+  border: 1px solid var(--tertiary-background);
+  color: var(--foreground);
+  background: transparent;
+  box-shadow: unset;
+  border-radius: 5px;
+}
+
+pre[class^="sc"] div[class^="sc"] {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
 /** Context Menu */
 
 #Menu {
@@ -409,6 +431,81 @@ span.size { text-align: start !important; margin-left: 3px; }
 
 #Menu > span:hover {
   background-color: rgba(var(--accent-rgb),max(var(--min-opacity),.20))
+}
+
+/** Server Info/Channel Sidebar */
+
+[class^="ServerSidebar__ServerList"] summary {
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+[class^="ServerSidebar__ServerList"] summary .padding {
+  display: flex;
+  flex-flow: row-reverse;
+  width: 100%;
+}
+
+[class^="ServerSidebar__ServerList"] summary .padding svg {
+  margin-left: auto;
+}
+
+[class^="ServerSidebar__ServerList"] a {
+  display: inline-block;
+  margin: 1px 5px;
+  height: 3rem;
+  width: 100%;
+  max-width: calc(100% - 10px);
+}
+
+[class^="ServerSidebar__ServerList"] [class^="_item_"] {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+[class^="ServerSidebar__ServerList"] [class^="_item_"][data-active] {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+[class^="ServerSidebar__ServerList"] details [class^="_item_"] {
+  margin-left: 10px;
+}
+
+[class^="ServerSidebar__ServerList"] details[open] summary {
+  background-color: var(--hover);
+}
+
+/** Profile modal **/
+
+div[type="user_profile"] [class^="_header_"] {
+  border-radius: 15px 15px 0 0;
+}
+
+div[type="user_profile"] [class^="_content_"] {
+  border-radius: 0 0 15px 15px;
+}
+
+/** Server List **/
+
+a[href="/settings"] div svg .gafLvO {
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+/** Tooltips **/
+
+.tippy-arrow {
+  display: none;
+}
+
+.tippy-box {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--primary-background);
+  box-shadow: 0 0 5px 5px #00000033;
 }
 ```
 
