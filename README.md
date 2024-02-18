@@ -59,7 +59,7 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 [class^="TypingIndicator__Base-sc-"] > div > [class^="avatars"] > img {
 	border-radius: 3px;
 }
-
+[data-item-index="0"] [class^="ItemContainer-sc-176t3v5-0"] foreignObject :is(div, img) { border-radius: 3px !important;}
 ```
 
 ## Square server icons (and more)
