@@ -160,6 +160,7 @@ Automatically hides the channels sidebar until hovered over.
 }
 ```
 
+
 ## Auto-hiding members list
 Automatically hides the members sidebar until hovered over.
 ```css
@@ -293,6 +294,21 @@ This is applied only on images.
 [class^="Container-sc-1d"] {
 	position: fixed;
 	bottom: -1.5rem;
+}
+```
+
+## Font Ligatures Fix
+![image](https://github.com/lo2dev/revolt-tweaks/assets/79321788/938f2c73-a2ac-4bbc-a16c-1698163ca5ee)
+
+```css
+/* Font ligatures fix */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1;
+}
+‎
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
 }
 ```
 
