@@ -304,6 +304,17 @@ a[href^="/server/"] svg > circle {
 }
 ```
 
+## No emote gaps
+![image](https://github.com/lo2dev/revolt-tweaks/assets/76877633/a5e3dfdd-0854-41b9-a22f-f8416b59751f)
+
+```css
+.emoji {
+    vertical-align: -0.3em;
+    object-fit: fill;
+    margin: 0px;
+}
+```
+
 # License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
