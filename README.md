@@ -304,6 +304,243 @@ a[href^="/server/"] svg > circle {
 }
 ```
 
+## Material design 3 styled components (incomplete)
+```css
+[class^="MessageBox__Base"] {
+  padding: 3px;
+  margin: 5px 10px 10px 10px;
+
+  border-radius: 15px;
+}
+
+[class^="AutoComplete__Base"] div {
+  background: transparent;
+  padding: 3px;
+}
+
+[class^="AutoComplete__Base"] button {
+  background-color: var(--secondary-background);
+  padding: 10px;
+  transition: border-radius .1s cubic-bezier(.62,.07,.48,.97);
+}
+
+[class^="AutoComplete__Base"] button.active {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+[class^="AutoComplete__Base"] :not(button:first-of-type, button:last-of-type), [class^="AutoComplete__Base"] button:only-of-type {
+  border-radius: 10px !important;
+}
+
+[class^="ReplyBar__Base"], [class^="ReplyBar__Base"]:only-of-type {
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+[class^="AutoComplete__Base"] button:first-of-type {
+  border-radius: 20px 20px 10px 10px;
+}
+
+[class^="ReplyBar__Base"]:first-of-type {
+  border-radius: 15px 15px 5px 5px;
+}
+
+[class^="AutoComplete__Base"] button:last-of-type {
+  border-radius: 10px 10px 20px 20px;
+}
+
+[class^="ReplyBar__Base"]:last-of-type {
+  border-radius: 5px 5px 15px 15px;
+}
+
+[class^="ReplyBar__Base"], [class^="ReplyBar__Base"]:only-of-type {
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+/** Attachment carousel */
+
+[class^="FilePreview__Container"] {
+ margin: 5px 10px;
+
+ border-radius: 10px;
+}
+
+span.fn { display: none; }
+span.size { text-align: start !important; margin-left: 3px; }
+
+/** Reactions (Might change classes after next commit) */
+.sc-jSgvzq {
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid var(--primary-header);
+}
+
+/** active */
+.fDfxAc {
+  background-color: var(--accent) !important;
+  color: var(--background) !important;
+  border: none !important;
+  font-weight: 600;
+}
+
+/** Messages (QOL) */
+
+.sc-jJEKmz {
+  margin-bottom: 3px;
+}
+
+pre[class^="sc"] {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--tertiary-background);
+}
+
+pre[class^="sc"] div[class^="sc"] a {
+  border: 1px solid var(--tertiary-background);
+  color: var(--foreground);
+  background: transparent;
+  box-shadow: unset;
+  border-radius: 5px;
+}
+
+pre[class^="sc"] div[class^="sc"] {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+/** Context Menu */
+
+#Menu, #NotificationOptions {
+  padding: unset;
+  border-radius: 5px;
+  backdrop-filter: unset;
+  background-color: var(--message-box);
+}
+
+#NotificationOptions .cnaZqa {
+ background-color: var(--message-box);
+}
+
+#Menu [class^="LineDivider"],
+#NotificationOptions [class^="LineDivider"] {
+  background-color: var(--tertiary-background);
+  width: 100%;
+}
+
+#Menu span,
+#NotificationOptions span {
+  border-radius: unset;
+  margin: 0;
+  padding: 5px;
+}
+
+#NotificationOptions span {
+  padding: 10px;
+}
+
+#Menu > span:hover,
+#NotificationOptions span:hover {
+  background-color: rgba(var(--accent-rgb),max(var(--min-opacity),.20))
+}
+
+/** Server Info/Channel Sidebar */
+
+[class^="ServerSidebar__ServerList"] summary {
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+[class^="ServerSidebar__ServerList"] summary .padding {
+  display: flex;
+  flex-flow: row-reverse;
+  width: 100%;
+}
+
+[class^="ServerSidebar__ServerList"] summary .padding svg {
+  margin-left: auto;
+}
+
+[class^="ServerSidebar__ServerList"] a {
+  display: inline-block;
+  margin: 1px 5px;
+  height: 3rem;
+  width: 100%;
+  max-width: calc(100% - 10px);
+}
+
+[class^="ServerSidebar__ServerList"] [class^="_item_"] {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+[class^="ServerSidebar__ServerList"] [class^="_item_"][data-active] {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+[class^="ServerSidebar__ServerList"] details [class^="_item_"] {
+  margin-left: 10px;
+}
+
+[class^="ServerSidebar__ServerList"] details[open] summary {
+  background-color: var(--hover);
+}
+
+/** Profile modal **/
+
+div[type="user_profile"] [class^="_header_"] {
+  border-radius: 15px 15px 0 0;
+}
+
+div[type="user_profile"] [class^="_content_"] {
+  border-radius: 0 0 15px 15px;
+}
+
+[class^="_entries_"] > [class^="_entry_"],
+[class^="_entries_"] > [class^="_entry_"]:only-of-type {
+  border-radius: 10px;
+}
+
+[class^="_entries_"] > [class^="_entry_"]:first-of-type {
+  border-radius: 20px 20px 10px 10px;
+}
+
+[class^="_entries_"] > [class^="_entry_"]:last-of-type {
+  border-radius:  10px 10px 20px 20px;
+}
+
+/** Server List **/
+
+a[href="/settings"] div svg .gafLvO {
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+/** Tooltips **/
+
+.tippy-arrow {
+  display: none;
+}
+
+.tippy-box {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--primary-background);
+  box-shadow: 0 0 5px 5px #00000033;
+}
+```
+
+![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/4e6a4244-72f1-4286-be40-4c9fc14c9f8b)
+![image](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/f8b147cd-9af4-4f48-a73e-f2ae80a1e439)
+![Screenshot_20240125_162646](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/bebb5d32-cf25-4279-b8fa-30a1208f1351)
+
+
+
 ## No emote gaps
 ![image](https://github.com/lo2dev/revolt-tweaks/assets/76877633/a5e3dfdd-0854-41b9-a22f-f8416b59751f)
 
