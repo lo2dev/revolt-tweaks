@@ -59,7 +59,9 @@ To apply them, **paste them in Settings -> Appearance -> Custom CSS.**
 [class^="TypingIndicator__Base-sc-"] > div > [class^="avatars"] > img {
 	border-radius: 3px;
 }
-
+[data-item-index="0"] [class^="ItemContainer-sc-176t3v5-0"] foreignObject :is(div, img) {
+	border-radius: 3px !important;
+}
 ```
 
 ## Square server icons (and more)
@@ -538,6 +540,17 @@ a[href="/settings"] div svg .gafLvO {
 ![Screenshot_20240125_162646](https://github.com/amycatgirl/revolt-tweaks/assets/138383945/bebb5d32-cf25-4279-b8fa-30a1208f1351)
 
 
+
+## No emote gaps
+![image](https://github.com/lo2dev/revolt-tweaks/assets/76877633/a5e3dfdd-0854-41b9-a22f-f8416b59751f)
+
+```css
+.emoji {
+    vertical-align: -0.3em;
+    object-fit: fill;
+    margin: 0px;
+}
+```
 
 # License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
